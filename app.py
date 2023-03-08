@@ -5,14 +5,9 @@ import time
 from datetime import datetime
 import pytz
 
+# conn = psycopg2.connect('postgresql://18.134.145.20/AIADB?user=ubuntu&password=postgres')
+conn = psycopg2.connect('postgresql://172.31.12.25/AIADB?user=ubuntu&password=postgres')
 
-
-# conn = psycopg2.connect(database="AIADB",
-#                         host="18.134.145.20",
-#                         user="ubuntu",
-#                         password="db_pass",
-#                         port="5432")
-conn = psycopg2.connect('postgresql://18.134.145.20/AIADB?user=ubuntu&password=postgres')
 cursor = conn.cursor()
 
 # Get Access token - Follow on how to get access token for your fb account
