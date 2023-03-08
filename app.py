@@ -33,7 +33,7 @@ def updatePostStatus(id):
     # return cursor.fetchall()
 
 def compareTime(timestring):
-    # format = '%Y-%m-%dT%H::%M::%S.%f'
+    # format = '%Y-%m-%dT%H::%M::%S.%f' 
     # postTime = datetime.strptime(timestring, format)
     # nowTime = datetime.strptime(str(datetime.now()), format)
     if datetime.now().replace(tzinfo=pytz.utc) >= timestring:
