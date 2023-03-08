@@ -42,7 +42,6 @@ def compareTime(timestring):
         return False
 
 while True:
-    time.sleep(600)
     if len(checkForPosts()) > 0:
         for row in checkForPosts():
             if  compareTime(row[3]):
@@ -54,3 +53,5 @@ while True:
                 print('Posted '+ str(row[0]))
     else:
         print('Nothing to Post')
+    
+    time.sleep(600)
